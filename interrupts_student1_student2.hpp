@@ -19,6 +19,7 @@
 #include<iomanip>
 #include<algorithm>
 
+
 //An enumeration of states to make assignment easier
 enum states {
     NEW,
@@ -59,12 +60,14 @@ struct PCB{
     unsigned int    size;
     unsigned int    arrival_time;
     int             start_time;
-    unsigned int    processing_time;
-    unsigned int    remaining_time;
+    unsigned int    processing_time;   // How much CPU processing does the process need (based on time)
+    unsigned int    remaining_time;    // CPU time remaining
+    unsigned int    io_remaining_time; // I/O time remaining 
     int             partition_number;
     enum states     state;
     unsigned int    io_freq;
     unsigned int    io_duration;
+    unsigned int    priority;
 };
 
 //------------------------------------HELPER FUNCTIONS FOR THE SIMULATOR------------------------------
@@ -264,11 +267,13 @@ PCB add_process(std::vector<std::string> tokens) {
     process.arrival_time = std::stoi(tokens[2]);
     process.processing_time = std::stoi(tokens[3]);
     process.remaining_time = std::stoi(tokens[3]);
+    process.io_remaining_time = 0;
     process.io_freq = std::stoi(tokens[4]);
     process.io_duration = std::stoi(tokens[5]);
     process.start_time = -1;
     process.partition_number = -1;
     process.state = NOT_ASSIGNED;
+    process.priority = process.PID; // Newly added for priority based algorithms. All are set to the highest priority initially
 
     return process;
 }
@@ -306,6 +311,7 @@ void idle_CPU(PCB &running) {
     running.start_time = 0;
     running.processing_time = 0;
     running.remaining_time = 0;
+    running.io_remaining_time = 0;
     running.arrival_time = 0;
     running.io_duration = 0;
     running.io_freq = 0;
@@ -313,6 +319,7 @@ void idle_CPU(PCB &running) {
     running.size = 0;
     running.state = NOT_ASSIGNED;
     running.PID = -1;
+    running.priority = 100;
 }
 
 #endif
