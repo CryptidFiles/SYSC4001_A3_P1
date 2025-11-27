@@ -72,7 +72,7 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
 
 
     // Main simulation loop
-    while (!all_process_terminated(job_list) || !ready_queue.empty() || !wait_queue.empty()) {
+    while (!all_process_terminated(job_list) || job_list.empty()) {
         std::cout << "=== HELLO ===\n" << std::endl;
         //  == 1. Admit new processes that have arrived ==
 
