@@ -1,0 +1,19 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 | 10 |       NEW |     READY |
+|                 0 | 10 |     READY |   RUNNING |
+|                30 | 10 |   RUNNING |TERMINATED |
++------------------------------------------------+
+
+
+
+=== MEMORY ANALYSIS (BONUS) ===
+Time: 0 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID10, P5:free, P6:free
+
+Time: 0 - Running: PID 10, Ready: 0, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID10, P5:free, P6:free
+
