@@ -1,0 +1,25 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  1 |       NEW |     READY |
+|                 0 |  8 |       NEW |     READY |
+|                 0 |  1 |     READY |   RUNNING |
+|                50 |  1 |   RUNNING |TERMINATED |
+|                50 |  8 |     READY |   RUNNING |
+|                55 |  8 |   RUNNING |   WAITING |
+|                60 |  8 |   WAITING |     READY |
+|                60 |  8 |     READY |   RUNNING |
+|                65 |  8 |   RUNNING |   WAITING |
+|                70 |  8 |   WAITING |     READY |
+|                70 |  8 |     READY |   RUNNING |
+|                75 |  8 |   RUNNING |   WAITING |
+|                80 |  8 |   WAITING |     READY |
+|                80 |  8 |     READY |   RUNNING |
+|                85 |  8 |   RUNNING |   WAITING |
+|                90 |  8 |   WAITING |     READY |
+|                90 |  8 |     READY |   RUNNING |
+|                95 |  8 |   RUNNING |   WAITING |
+|               100 |  8 |   WAITING |     READY |
+|               100 |  8 |     READY |   RUNNING |
+|               105 |  8 |   RUNNING |   WAITING |
+|               110 |  8 |   WAITING |     READY |
+|               110 |  8 |     READY |   RUNNING |

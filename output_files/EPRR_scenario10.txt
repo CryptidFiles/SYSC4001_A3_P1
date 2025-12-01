@@ -1,0 +1,13 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  1 |       NEW |     READY |
+|                 0 |  3 |       NEW |     READY |
+|                 0 |  5 |       NEW |     READY |
+|                 0 |  7 |       NEW |     READY |
+|                 0 |  1 |     READY |   RUNNING |
+|                60 |  1 |   RUNNING |TERMINATED |
+|                60 |  3 |     READY |   RUNNING |
+|               110 |  3 |   RUNNING |TERMINATED |
+|               110 |  5 |     READY |   RUNNING |
+|               150 |  5 |   RUNNING |TERMINATED |
+|               150 |  7 |     READY |   RUNNING |

@@ -1,0 +1,40 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  1 |       NEW |     READY |
+|                 0 |  1 |     READY |   RUNNING |
+|                 3 |  4 |       NEW |     READY |
+|                 6 |  7 |       NEW |     READY |
+|                 9 |  1 |   RUNNING |   WAITING |
+|                 9 | 10 |       NEW |     READY |
+|                 9 |  4 |     READY |   RUNNING |
+|                14 |  1 |   WAITING |     READY |
+|                39 |  4 |   RUNNING |TERMINATED |
+|                39 |  1 |     READY |   RUNNING |
+|                48 |  1 |   RUNNING |   WAITING |
+|                48 |  7 |     READY |   RUNNING |
+|                53 |  1 |   WAITING |     READY |
+|                54 |  7 |   RUNNING |   WAITING |
+|                54 |  1 |     READY |   RUNNING |
+|                58 |  7 |   WAITING |     READY |
+|                63 |  1 |   RUNNING |   WAITING |
+|                63 |  7 |     READY |   RUNNING |
+|                68 |  1 |   WAITING |     READY |
+|                69 |  7 |   RUNNING |   WAITING |
+|                69 |  1 |     READY |   RUNNING |
+|                73 |  7 |   WAITING |     READY |
+|                78 |  1 |   RUNNING |   WAITING |
+|                78 |  7 |     READY |   RUNNING |
+|                83 |  1 |   WAITING |     READY |
+|                84 |  7 |   RUNNING |   WAITING |
+|                84 |  1 |     READY |   RUNNING |
+|                88 |  7 |   WAITING |     READY |
+|                93 |  1 |   RUNNING |TERMINATED |
+|                93 |  7 |     READY |   RUNNING |
+|                99 |  7 |   RUNNING |   WAITING |
+|                99 | 10 |     READY |   RUNNING |
+|               103 |  7 |   WAITING |     READY |
+|               124 | 10 |   RUNNING |TERMINATED |
+|               124 |  7 |     READY |   RUNNING |
+|               130 |  7 |   RUNNING |   WAITING |
+|               134 |  7 |   WAITING |     READY |
+|               134 |  7 |     READY |   RUNNING |

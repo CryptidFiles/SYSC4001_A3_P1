@@ -1,0 +1,169 @@
++------------------------------------------------+
+|Time of Transition |PID | Old State | New State |
++------------------------------------------------+
+|                 0 |  4 |       NEW |     READY |
+|                 0 |  4 |     READY |   RUNNING |
+|                 5 |  6 |       NEW |     READY |
+|                 6 |  4 |   RUNNING |   WAITING |
+|                 6 |  6 |     READY |   RUNNING |
+|                 9 |  4 |   WAITING |     READY |
+|                12 |  1 |       NEW |     READY |
+|                26 |  6 |   RUNNING |TERMINATED |
+|                26 |  4 |     READY |   RUNNING |
+|                32 |  4 |   RUNNING |   WAITING |
+|                32 |  1 |     READY |   RUNNING |
+|                35 |  4 |   WAITING |     READY |
+|                37 |  1 |   RUNNING |   WAITING |
+|                37 |  4 |     READY |   RUNNING |
+|                39 |  1 |   WAITING |     READY |
+|                43 |  4 |   RUNNING |   WAITING |
+|                43 |  1 |     READY |   RUNNING |
+|                46 |  4 |   WAITING |     READY |
+|                48 |  1 |   RUNNING |   WAITING |
+|                48 |  4 |     READY |   RUNNING |
+|                50 |  1 |   WAITING |     READY |
+|                54 |  4 |   RUNNING |   WAITING |
+|                54 |  1 |     READY |   RUNNING |
+|                57 |  4 |   WAITING |     READY |
+|                59 |  1 |   RUNNING |   WAITING |
+|                59 |  4 |     READY |   RUNNING |
+|                61 |  1 |   WAITING |     READY |
+|                65 |  4 |   RUNNING |TERMINATED |
+|                65 |  1 |     READY |   RUNNING |
+|                70 |  1 |   RUNNING |   WAITING |
+|                72 |  1 |   WAITING |     READY |
+|                72 |  1 |     READY |   RUNNING |
+|                77 |  1 |   RUNNING |TERMINATED |
++------------------------------------------------+
+
+
+
+=== MEMORY ANALYSIS (BONUS) ===
+Time: 0 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 15MB, Free: 85MB, Usable: 85MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:free, P6:free
+
+Time: 0 - Running: PID 4, Ready: 0, Waiting: 0
+  Memory - Used: 15MB, Free: 85MB, Usable: 85MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:free, P6:free
+
+Time: 5 - Running: PID 4, Ready: 1, Waiting: 0
+  Memory - Used: 23MB, Free: 77MB, Usable: 77MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:PID6, P6:free
+
+Time: 6 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 23MB, Free: 77MB, Usable: 77MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:PID6, P6:free
+
+Time: 6 - Running: PID 6, Ready: 0, Waiting: 1
+  Memory - Used: 23MB, Free: 77MB, Usable: 77MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:PID6, P6:free
+
+Time: 9 - Running: PID 6, Ready: 1, Waiting: 0
+  Memory - Used: 23MB, Free: 77MB, Usable: 77MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:free, P5:PID6, P6:free
+
+Time: 12 - Running: PID 6, Ready: 2, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:PID6, P6:free
+
+Time: 26 - Running: IDLE, Ready: 2, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 26 - Running: PID 4, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 32 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 32 - Running: PID 1, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 35 - Running: PID 1, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 37 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 37 - Running: PID 4, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 39 - Running: PID 4, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 43 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 43 - Running: PID 1, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 46 - Running: PID 1, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 48 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 48 - Running: PID 4, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 50 - Running: PID 4, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 54 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 54 - Running: PID 1, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 57 - Running: PID 1, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 59 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 59 - Running: PID 4, Ready: 0, Waiting: 1
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 61 - Running: PID 4, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions: P1:free, P2:free, P3:PID4, P4:PID1, P5:free, P6:free
+
+Time: 65 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID1, P5:free, P6:free
+
+Time: 65 - Running: PID 1, Ready: 0, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID1, P5:free, P6:free
+
+Time: 70 - Running: IDLE, Ready: 0, Waiting: 1
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID1, P5:free, P6:free
+
+Time: 72 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID1, P5:free, P6:free
+
+Time: 72 - Running: PID 1, Ready: 0, Waiting: 0
+  Memory - Used: 10MB, Free: 90MB, Usable: 90MB
+  Partitions: P1:free, P2:free, P3:free, P4:PID1, P5:free, P6:free
+

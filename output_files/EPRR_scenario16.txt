@@ -1,0 +1,43 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  2 |       NEW |     READY |
+|                 0 |  2 |     READY |   RUNNING |
+|                10 |  4 |       NEW |     READY |
+|                20 |  6 |       NEW |     READY |
+|                25 |  8 |       NEW |     READY |
+|                30 | 10 |       NEW |     READY |
+|                80 |  2 |   RUNNING |TERMINATED |
+|                80 |  4 |     READY |   RUNNING |
+|                90 |  4 |   RUNNING |   WAITING |
+|                90 |  6 |     READY |   RUNNING |
+|                96 |  4 |   WAITING |     READY |
+|               140 |  6 |   RUNNING |TERMINATED |
+|               140 |  4 |     READY |   RUNNING |
+|               150 |  4 |   RUNNING |   WAITING |
+|               150 |  8 |     READY |   RUNNING |
+|               156 |  4 |   WAITING |     READY |
+|               158 |  8 |   RUNNING |   WAITING |
+|               158 |  4 |     READY |   RUNNING |
+|               163 |  8 |   WAITING |     READY |
+|               168 |  4 |   RUNNING |   WAITING |
+|               168 |  8 |     READY |   RUNNING |
+|               174 |  4 |   WAITING |     READY |
+|               176 |  8 |   RUNNING |   WAITING |
+|               176 |  4 |     READY |   RUNNING |
+|               181 |  8 |   WAITING |     READY |
+|               186 |  4 |   RUNNING |   WAITING |
+|               186 |  8 |     READY |   RUNNING |
+|               192 |  4 |   WAITING |     READY |
+|               194 |  8 |   RUNNING |   WAITING |
+|               194 |  4 |     READY |   RUNNING |
+|               199 |  8 |   WAITING |     READY |
+|               204 |  4 |   RUNNING |   WAITING |
+|               204 |  8 |     READY |   RUNNING |
+|               210 |  4 |   WAITING |     READY |
+|               212 |  8 |   RUNNING |   WAITING |
+|               212 |  4 |     READY |   RUNNING |
+|               217 |  8 |   WAITING |     READY |
+|               222 |  4 |   RUNNING |TERMINATED |
+|               222 |  8 |     READY |   RUNNING |
+|               230 |  8 |   RUNNING |TERMINATED |
+|               230 | 10 |     READY |   RUNNING |

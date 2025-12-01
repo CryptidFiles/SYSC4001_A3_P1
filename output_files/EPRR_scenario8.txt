@@ -1,0 +1,36 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  4 |       NEW |     READY |
+|                 0 |  4 |     READY |   RUNNING |
+|                 5 |  6 |       NEW |     READY |
+|                 6 |  4 |   RUNNING |   WAITING |
+|                 6 |  6 |     READY |   RUNNING |
+|                10 |  4 |   WAITING |     READY |
+|                12 |  1 |       NEW |     READY |
+|                12 |  6 |   RUNNING |     READY |
+|                12 |  1 |     READY |   RUNNING |
+|                17 |  1 |   RUNNING |   WAITING |
+|                17 |  4 |     READY |   RUNNING |
+|                20 |  1 |   WAITING |     READY |
+|                23 |  4 |   RUNNING |   WAITING |
+|                23 |  1 |     READY |   RUNNING |
+|                27 |  4 |   WAITING |     READY |
+|                28 |  1 |   RUNNING |   WAITING |
+|                28 |  4 |     READY |   RUNNING |
+|                31 |  1 |   WAITING |     READY |
+|                34 |  4 |   RUNNING |   WAITING |
+|                34 |  1 |     READY |   RUNNING |
+|                38 |  4 |   WAITING |     READY |
+|                39 |  1 |   RUNNING |   WAITING |
+|                39 |  4 |     READY |   RUNNING |
+|                42 |  1 |   WAITING |     READY |
+|                45 |  4 |   RUNNING |   WAITING |
+|                45 |  1 |     READY |   RUNNING |
+|                49 |  4 |   WAITING |     READY |
+|                50 |  1 |   RUNNING |   WAITING |
+|                50 |  4 |     READY |   RUNNING |
+|                53 |  1 |   WAITING |     READY |
+|                56 |  4 |   RUNNING |TERMINATED |
+|                56 |  1 |     READY |   RUNNING |
+|                61 |  1 |   RUNNING |TERMINATED |
+|                61 |  6 |     READY |   RUNNING |

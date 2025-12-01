@@ -63,19 +63,20 @@ std::string log_memory_status(unsigned int current_time, bool cpu_idle, const PC
         memory_status += "Usable: " + std::to_string(usable_memory) + "MB\n";
         
         // Show partition status
-        memory_status += "  Partitions: ";
+        memory_status += "  Partitions:\n";
         for (int i = 0; i < 6; i++) {
-            memory_status += "P" + std::to_string(memory_paritions[i].partition_number) + ":";
-            memory_status += (memory_paritions[i].occupied == -1 ? "free" : "PID" + std::to_string(memory_paritions[i].occupied));
-            memory_status += (i < 5 ? ", " : "");
+            memory_status += "    [" + std::to_string(i) + "] Size: " + std::to_string(memory_paritions[i].size) 
+                             + "MB, ";
+            if (memory_paritions[i].occupied == -1) {
+                memory_status += "Free\n";
+            } else {
+                memory_status += "Occupied by PID " + std::to_string(memory_paritions[i].occupied) + "\n";
+            }
         }
-        memory_status += "\n\n";
     }
     
     return memory_status;
 }
-
-
 
 // External Priorities scheduler - processes are prioritized by PID (lower PID = higher priority)
 void ExternalPriorities(std::vector<PCB> &ready_queue) {
@@ -93,14 +94,14 @@ void schedule_process(std::vector<PCB> &ready_queue, std::vector<PCB> &wait_queu
                      std::vector<PCB> &job_list, unsigned int current_time,
                      std::string &execution_status, std::string &memory_status){
 
-    if (!ready_queue.empty() && cpu_idle || need_reschedule) {
-        ExternalPriorities(ready_queue);  // REVISIT AGAIN TO SEE IF PROPERLY DONEEEE
+    if ((!ready_queue.empty() && cpu_idle) || need_reschedule) {
+        ExternalPriorities(ready_queue);
+        // REVISIT AGAIN TO SEE IF PROPERLY DONEEEE
         running = ready_queue.front();
         ready_queue.erase(ready_queue.begin());
         running.state = RUNNING;
         running.start_time = current_time;  // This now means "last run start time"
         running.time_quantum_used = 0;  // Reset time quantum counter to so we can now  start counting to 100ms
-
 
         sync_queue(job_list, running);
         cpu_idle = false;
@@ -113,7 +114,13 @@ void schedule_process(std::vector<PCB> &ready_queue, std::vector<PCB> &wait_queu
 }
 
 
-// Check if a process should request I/O based on its frequency
+/**
+ * Checks if the process should request I/O antime after running a set of
+ * time in the CPU. 
+ * 
+ * @returns true if the amount of time in between its start and its total CPU time
+ * (no I/O in between) is equal to its set i/o frequency, request  I/O for that process
+ */
 bool should_request_io(const PCB &process, unsigned int time_ran) {
     // If the duration ran from the current time and when the total CPU time its ran
     // (no I/O in between) is equal to its set i/o frequency, request  I/O for that process
@@ -138,29 +145,24 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
     //Initialize an empty running process
     idle_CPU(running);
 
-    // Create output table header
-    execution_status = print_exec_header();
+    //Print out the starting prompt
+    execution_status = "Time    PID   OldState      NewState      Description\n";
+    execution_status += "-----------------------------------------------------\n";
 
-    // DEBUG: Check if list of processes were properly loaded
-    std::cout << "\n=== DEBUG: PROCESSES LOADED ===" << std::endl;
-    std::cout << "Total processes loaded: " << list_processes.size() << std::endl;
-    
-    if (list_processes.empty()) {
-        std::cout << "WARNING: No processes were loaded!" << std::endl;
-    } else {
-        std::cout << "PID | Size | Arrival | CPU Time | I/O Freq | I/O Dur | Priority | State" << std::endl;
-        std::cout << "----|------|---------|----------|----------|---------|----------|-------" << std::endl;
-        
-        for (const auto& process : list_processes) {
-            std::cout << std::setw(3) << process.PID << " | "
-                      << std::setw(4) << process.size << " | "
-                      << std::setw(7) << process.arrival_time << " | "
-                      << std::setw(8) << process.processing_time << " | "
-                      << std::setw(8) << process.io_freq << " | "
-                      << std::setw(7) << process.io_duration << " | "
-                      << std::setw(8) << process.priority << " | "
-                      << process.state << std::endl;
-        }
+    // INITIAL DEBUG PRINT TO CHECK PROCESSES LOADED
+    std::cout << "\n=== DEBUG: PROCESSES LOADED ===\n";
+    std::cout << "Total processes loaded: " << list_processes.size() << "\n";
+    std::cout << "PID | Size | Arrival | CPU Time | I/O Freq | I/O Dur | Priority | State\n";
+    std::cout << "----|------|---------|----------|----------|---------|----------|-------\n";
+    for (const auto& process : list_processes) {
+        std::cout << std::setw(3) << process.PID << " | "
+                  << std::setw(4) << process.size << " | "
+                  << std::setw(7) << process.arrival_time << " | "
+                  << std::setw(8) << process.processing_time << " | "
+                  << std::setw(8) << process.io_freq << " | "
+                  << std::setw(7) << process.io_duration << " | "
+                  << std::setw(8) << process.priority << " | "
+                  << process.state << std::endl;
     }
     std::cout << "=== END DEBUG ===\n" << std::endl;
 
@@ -206,9 +208,9 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
             }
         }
 
-        // === 2. SCHEDULE A PROCESS FROM THE READY QUEUE (EXTERNAL PRIORITIES - NO PREEMPTION) ===
+        // === 2. SCHEDULE A PROCESS FROM THE READY QUEUE (EXTERNAL PRIORITIES WITH RR) ===
 
-        // Only find a new process to run if there are any processes in the read queue and CPU is idle
+        // Only find a new process to run if there are any proceeses in the ready queue and CPU is idle
         if (cpu_idle || need_reschedule) {
             schedule_process(ready_queue, wait_queue, running, cpu_idle, need_reschedule, 
                             job_list, current_time, execution_status, memory_status);
@@ -224,24 +226,20 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
         // Utilize an interator for the wait queue
         for (auto it = wait_queue.begin(); it != wait_queue.end(); ) {
             if (it->io_remaining_time > 0) {
-                // Decrement each process' duration timer by 1ms 
-                it->io_remaining_time--;
+                // For every 1ms in this loop, decrement the remaining I/O time
+                it->io_remaining_time--;     
 
-                // If I/O has completed, move to the ready queue
-                if (it->io_remaining_time == 0) {
-                    PCB ready_process = *it;
-                    ready_process.state = READY;
-                    ready_process.time_quantum_used = 0;  // Reset time quantum to avoid any issues (mostly unneeded)
-                    ready_queue.push_back(ready_process);
-                    transitions.push_back({it->PID, WAITING, READY});
-                    
-                    need_reschedule = true; // preemption indicates we need to call the scheduler
-
-                    // Actually remove from wait queue
-                    it = wait_queue.erase(it);
-                } else {
-                    it++;
-                }
+                // Keep the process in wait queue
+                it++;
+            } else if (it->io_remaining_time == 0) {
+                // Check if it has reached the end of the I/O time
+                PCB ready_process = *it;
+                ready_process.state = READY;
+                ready_queue.push_back(ready_process);
+                transitions.push_back({it->PID, WAITING, READY});
+                //timing calc
+                //Remove the process from the wait queue
+                it = wait_queue.erase(it); 
             } else {
                 // Almost never happens since it would be out of waiting list but added for failsafe/debugging
                 it++;
@@ -303,6 +301,22 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
             }      
         }
 
+        // === SAFETY CHECK: AVOID NON-TERMINATING STATE ===
+        // If the CPU is idle and both the ready and wait queues are empty, then there is no
+        // further work that can be done in this simulation. Any processes that are still not
+        // marked TERMINATED in job_list are in an inconsistent state (e.g., logically finished
+        // but never had their state updated). To avoid an infinite loop, we conservatively
+        // mark all remaining non-terminated processes as TERMINATED and exit the loop.
+        if (cpu_idle && ready_queue.empty() && wait_queue.empty()) {
+            for (auto &p : job_list) {
+                if (p.state != TERMINATED) {
+                    p.state = TERMINATED;
+                    p.remaining_time = 0;
+                }
+            }
+            break;
+        }
+
         // === 5. INCREMENT CURRENT TIMER ===
         current_time++;  // Every iteration of loop indicates 1ms (i.e. assumed time unit) passing
 
@@ -314,29 +328,15 @@ std::tuple<std::string> run_simulation(std::vector<PCB> list_processes) {
             execution_status += print_exec_status(current_time, pid, old_state, new_state);
         }
         
-        // === 7. LOG ALL POSTPONED TRANSITION EXECUTION LOGS ===
-        if (!transitions.empty()) {
-            // Same as the transition execution logs but for their corresponding memory logs
-            memory_status += log_memory_status(current_time, cpu_idle, running, ready_queue, wait_queue);
-        }
     }
 
-
-    // Close the output table
-    execution_status += print_exec_footer();
-    
-    // Add memory analysis to execution file for bonus mark
-    execution_status += "\n\n\n=== MEMORY ANALYSIS (BONUS) ===\n";
-    execution_status += memory_status;
-
-    return std::make_tuple(execution_status);
+    return {execution_status};
 }
 
-int main(int argc, char** argv) {
-    // Get the input file from the user
-    if (argc != 2) {
-        std::cout << "ERROR!\nExpected 1 argument, received " << argc - 1 << std::endl;
-        std::cout << "To run the program, do: ./interrupts <your_input_file.txt>" << std::endl;
+int main(int argc, char **argv) {
+    // Reject empty argument list
+    if (argc <= 1) {
+        std::cerr << "Error: No input files provided.\n";
         return -1;
     }
 
@@ -351,7 +351,7 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    // Parse the entire input file and populate a vector of PCBs
+    // Reads the input file line by line and constructs a list of processes
     std::string line;
     std::vector<PCB> list_process;
     while (std::getline(input_file, line)) {

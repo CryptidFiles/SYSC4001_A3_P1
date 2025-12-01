@@ -1,0 +1,40 @@
+Time    PID   OldState      NewState      Description
+-----------------------------------------------------
+|                 0 |  4 |       NEW |     READY |
+|                 0 |  9 |       NEW |     READY |
+|                 0 |  4 |     READY |   RUNNING |
+|                 8 |  4 |   RUNNING |   WAITING |
+|                 8 |  9 |     READY |   RUNNING |
+|                13 |  4 |   WAITING |     READY |
+|                13 |  9 |   RUNNING |   WAITING |
+|                13 |  4 |     READY |   RUNNING |
+|                19 |  9 |   WAITING |     READY |
+|                21 |  4 |   RUNNING |   WAITING |
+|                21 |  9 |     READY |   RUNNING |
+|                26 |  4 |   WAITING |     READY |
+|                26 |  9 |   RUNNING |   WAITING |
+|                26 |  4 |     READY |   RUNNING |
+|                32 |  9 |   WAITING |     READY |
+|                34 |  4 |   RUNNING |   WAITING |
+|                34 |  9 |     READY |   RUNNING |
+|                39 |  4 |   WAITING |     READY |
+|                39 |  9 |   RUNNING |   WAITING |
+|                39 |  4 |     READY |   RUNNING |
+|                45 |  9 |   WAITING |     READY |
+|                47 |  4 |   RUNNING |   WAITING |
+|                47 |  9 |     READY |   RUNNING |
+|                52 |  4 |   WAITING |     READY |
+|                52 |  9 |   RUNNING |   WAITING |
+|                52 |  4 |     READY |   RUNNING |
+|                58 |  9 |   WAITING |     READY |
+|                60 |  4 |   RUNNING |TERMINATED |
+|                60 |  9 |     READY |   RUNNING |
+|                65 |  9 |   RUNNING |   WAITING |
+|                71 |  9 |   WAITING |     READY |
+|                71 |  9 |     READY |   RUNNING |
+|                76 |  9 |   RUNNING |   WAITING |
+|                82 |  9 |   WAITING |     READY |
+|                82 |  9 |     READY |   RUNNING |
+|                87 |  9 |   RUNNING |   WAITING |
+|                93 |  9 |   WAITING |     READY |
+|                93 |  9 |     READY |   RUNNING |
