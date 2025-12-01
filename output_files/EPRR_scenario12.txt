@@ -65,3 +65,1698 @@ Time    PID   OldState      NewState      Description
 |               155 |  8 |   RUNNING |   WAITING |
 |               158 |  8 |   WAITING |     READY |
 |               158 |  8 |     READY |   RUNNING |
+|               162 |  8 |   RUNNING |TERMINATED |
+
+=== MEMORY ANALYSIS (BONUS) ===
+Time: 0 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 25MB, Free: 75MB, Usable: 75MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 0 - Running: IDLE, Ready: 2, Waiting: 0
+  Memory - Used: 40MB, Free: 60MB, Usable: 60MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 0 - Running: IDLE, Ready: 3, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 0 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 1 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 2 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 3 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 4 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 5 - Running: IDLE, Ready: 2, Waiting: 1
+  Memory - Used: 50MB, Free: 50MB, Usable: 50MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Free
+    [5] Size: 2MB, Free
+Time: 5 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 5 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 6 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 7 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 8 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 9 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 10 - Running: PID 4, Ready: 2, Waiting: 1
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 11 - Running: PID 4, Ready: 3, Waiting: 0
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 12 - Running: PID 4, Ready: 3, Waiting: 0
+  Memory - Used: 58MB, Free: 42MB, Usable: 42MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 12 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 13 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 14 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 15 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 16 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 17 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 18 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 19 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 20 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 21 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 22 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 23 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 24 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 25 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 26 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 27 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 28 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 29 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 30 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 31 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 32 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 33 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 34 - Running: PID 4, Ready: 4, Waiting: 0
+  Memory - Used: 60MB, Free: 40MB, Usable: 40MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Occupied by PID 4
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 35 - Running: IDLE, Ready: 4, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 35 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 36 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 37 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 38 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 39 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 40 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 40 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 41 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 42 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 43 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 44 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 45 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 46 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 47 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 48 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 48 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 49 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 50 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 51 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 52 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 53 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 53 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 54 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 55 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 56 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 57 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 58 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 59 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 60 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 61 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 61 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 62 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 63 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 64 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 65 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 66 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 66 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 67 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 68 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 69 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 70 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 71 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 72 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 73 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 74 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 74 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 75 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 76 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 77 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 78 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 79 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 79 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 80 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 81 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 82 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 83 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 84 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 85 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 86 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 87 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 87 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 88 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 89 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 90 - Running: PID 2, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 91 - Running: PID 2, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 92 - Running: IDLE, Ready: 3, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 92 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 93 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 94 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 95 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 96 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 97 - Running: PID 6, Ready: 2, Waiting: 1
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 98 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 99 - Running: PID 6, Ready: 3, Waiting: 0
+  Memory - Used: 45MB, Free: 55MB, Usable: 55MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Occupied by PID 6
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 100 - Running: IDLE, Ready: 3, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 100 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 101 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 102 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 103 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 104 - Running: PID 2, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 105 - Running: IDLE, Ready: 2, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 105 - Running: PID 8, Ready: 1, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 106 - Running: PID 8, Ready: 1, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 107 - Running: PID 8, Ready: 1, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 108 - Running: PID 8, Ready: 1, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 109 - Running: IDLE, Ready: 1, Waiting: 2
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 109 - Running: PID 10, Ready: 0, Waiting: 2
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 110 - Running: PID 10, Ready: 0, Waiting: 2
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 111 - Running: PID 10, Ready: 1, Waiting: 1
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 112 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 113 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 114 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 115 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 116 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 117 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 118 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 119 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 120 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 121 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 122 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 123 - Running: PID 10, Ready: 2, Waiting: 0
+  Memory - Used: 35MB, Free: 65MB, Usable: 65MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Occupied by PID 10
+Time: 124 - Running: IDLE, Ready: 2, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 124 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 125 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 126 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 127 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 128 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 129 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 129 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 130 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 131 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 132 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 133 - Running: IDLE, Ready: 0, Waiting: 2
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 134 - Running: IDLE, Ready: 0, Waiting: 2
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 135 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 135 - Running: PID 2, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 136 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 137 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 138 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 139 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 140 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 140 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 141 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 142 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 143 - Running: PID 8, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 144 - Running: IDLE, Ready: 0, Waiting: 2
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 145 - Running: IDLE, Ready: 0, Waiting: 2
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 146 - Running: IDLE, Ready: 1, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 146 - Running: PID 2, Ready: 0, Waiting: 1
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 147 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 148 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 149 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 150 - Running: PID 2, Ready: 1, Waiting: 0
+  Memory - Used: 33MB, Free: 67MB, Usable: 67MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Occupied by PID 2
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 151 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 151 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 152 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 153 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 154 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 155 - Running: IDLE, Ready: 0, Waiting: 1
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 156 - Running: IDLE, Ready: 0, Waiting: 1
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 157 - Running: IDLE, Ready: 0, Waiting: 1
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 158 - Running: IDLE, Ready: 1, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 158 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 159 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 160 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
+Time: 161 - Running: PID 8, Ready: 0, Waiting: 0
+  Memory - Used: 8MB, Free: 92MB, Usable: 92MB
+  Partitions:
+    [0] Size: 40MB, Free
+    [1] Size: 25MB, Free
+    [2] Size: 15MB, Free
+    [3] Size: 10MB, Free
+    [4] Size: 8MB, Occupied by PID 8
+    [5] Size: 2MB, Free
